@@ -1,0 +1,502 @@
+[
+  {
+    "q": "What does FAB stand for in sales?",
+    "o": [
+      "Features, Advantages, Benefits",
+      "Facts, Attributes, Brands",
+      "Features, Attributes, Basics",
+      "Findings, Actions, Benefits"
+    ],
+    "a": 0
+  },
+  {
+    "q": "Up to what percentage of buying decisions are emotional?",
+    "o": [
+      "50%",
+      "70%",
+      "90%",
+      "100%"
+    ],
+    "a": 2
+  },
+  {
+    "q": "Recommended mattress replacement cycle?",
+    "o": [
+      "3–4 years",
+      "5–6 years",
+      "7–10 years",
+      "15+ years"
+    ],
+    "a": 2
+  },
+  {
+    "q": "What is motion transfer?",
+    "o": [
+      "Shifting a mattress between rooms on delivery",
+      "Partner movement traveling across the bed",
+      "A wireless setting that adjusts foam firmness",
+      "A proprietary coil design that adds extra bounce"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Why avoid leading with price?",
+    "o": [
+      "Store pricing fluctuates daily and can't be guaranteed",
+      "Shifts focus to cost before value is established",
+      "Management policy discourages discussing prices early",
+      "Customers become overwhelmed by multiple price points"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What happens to spinal discs during sleep?",
+    "o": [
+      "They compress and flatten",
+      "They rehydrate and expand",
+      "They stay in a static position",
+      "They gradually fuse together"
+    ],
+    "a": 1
+  },
+  {
+    "q": "Side sleepers need what type of feel?",
+    "o": [
+      "Very firm — to keep the spine rigid and fully aligned",
+      "Extra firm only — to prevent any deep body sinking",
+      "Medium-firm to firm — for even weight distribution",
+      "Softer — for shoulder and hip pressure relief"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest over 250 lbs — most critical mattress factor?",
+    "o": [
+      "Thread count — higher weave density in the cover fabric",
+      "Pillow loft — taller comfort layers for extra cushioning",
+      "Color and aesthetics — matching the guest's bedroom décor",
+      "Enhanced support — thicker coils and denser foam"
+    ],
+    "a": 3
+  },
+  {
+    "q": "What does ILD measure in foam?",
+    "o": [
+      "Long-term durability under repeated compression",
+      "Thermal response rate to ambient temperature",
+      "Density measured in pounds per cubic foot",
+      "Firmness via indentation load deflection"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Best closing question when guest compares two mattresses?",
+    "o": [
+      "Go ahead and pick whichever one you like",
+      "Which one of those fits your budget best?",
+      "Both options are honestly about the same",
+      "Which one made your back feel better?"
+    ],
+    "a": 3
+  },
+  {
+    "q": "'I need to think about it' — best response?",
+    "o": [
+      "Hand them your business card and let them take their time",
+      "Offer an immediate discount to try closing the sale",
+      "Let them know the current promotional sale ends today",
+      "Ask what specifically they need to think through"
+    ],
+    "a": 3
+  },
+  {
+    "q": "'It's too expensive' — best first move?",
+    "o": [
+      "Immediately redirect the guest to a lower-priced model",
+      "Offer to match or beat any competitor's advertised price",
+      "Emphasize that premium material quality justifies the cost",
+      "Explore their budget and reframe to cost-per-night"
+    ],
+    "a": 3
+  },
+  {
+    "q": "'I read bad reviews' — best approach?",
+    "o": [
+      "Dismiss the reviews as unreliable online commentary",
+      "Agree with the negative reviews and switch brands",
+      "Offer a defensive explanation of the brand's record",
+      "Validate concern and address the specific issue"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Which sleep position benefits most from a softer feel?",
+    "o": [
+      "Stomach",
+      "Back",
+      "All equally",
+      "Side"
+    ],
+    "a": 3
+  },
+  {
+    "q": "What body change triggers sleep onset?",
+    "o": [
+      "Core temperature rises noticeably",
+      "Heart rate spikes above resting level",
+      "Blood pressure increases temporarily",
+      "Core temperature drops slightly"
+    ],
+    "a": 3
+  },
+  {
+    "q": "How many sleep cycles does a healthy adult complete per night?",
+    "o": [
+      "1–2",
+      "2–3",
+      "8–10",
+      "4–6"
+    ],
+    "a": 3
+  },
+  {
+    "q": "'My old mattress lasted 20 years' — what do you say?",
+    "o": [
+      "Mattresses were built with different materials back then",
+      "Focus the conversation on only the most durable models",
+      "Acknowledge their experience and move to the next topic",
+      "Support degrades long before the cover wears out"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Cost-per-night of a $1,200 mattress over 10 years?",
+    "o": [
+      "$1.20 per night",
+      "$0.66 per night",
+      "$0.33 per night",
+      "$2.40 per night"
+    ],
+    "a": 1
+  },
+  {
+    "q": "What is the 'break-in' period for a new mattress?",
+    "o": [
+      "There is no recognized break-in period at all",
+      "A minimum of 30 days for any noticeable change",
+      "Roughly one year for the foam layers to break in",
+      "About 2–4 weeks for foam to fully soften"
+    ],
+    "a": 3
+  },
+  {
+    "q": "What does 'zoned support' mean in a mattress?",
+    "o": [
+      "Different pricing tiers applied by geographic sales zone",
+      "Targeted cooling technology placed in specific body zones",
+      "Segmented air chambers that inflate by individual zones",
+      "Firmness varies by body region for targeted support"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Tempur-Adapt firmness options?",
+    "o": [
+      "One universal firmness option",
+      "Four graduated firmness levels",
+      "Six distinct firmness selections",
+      "Two: Medium and Medium Hybrid"
+    ],
+    "a": 3
+  },
+  {
+    "q": "LuxeAdapt vs. ProAdapt — key difference?",
+    "o": [
+      "Only the exterior fabric color and cover pattern are different",
+      "ProAdapt carries a higher retail price point across all sizes",
+      "Both models share identical internal foam layer compositions",
+      "LuxeAdapt has thicker TEMPUR for deeper pressure relief"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Which Tempur model offers up to 8° cooler sleep?",
+    "o": [
+      "Adapt",
+      "Cloud",
+      "ProBreeze°",
+      "LuxeBreeze°"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Tempur-Pedic standard warranty length?",
+    "o": [
+      "5-year standard limited coverage",
+      "2-year basic manufacturer warranty",
+      "Lifetime unconditional full warranty",
+      "10-year full replacement limited"
+    ],
+    "a": 3
+  },
+  {
+    "q": "PureCool+™ technology does what?",
+    "o": [
+      "Circulates water through internal micro-cooling channels",
+      "Requires an electrical connection to activate its cooling",
+      "Functions exclusively when paired with the Ergo Smart base",
+      "Proactively absorbs surface heat before you feel it"
+    ],
+    "a": 3
+  },
+  {
+    "q": "What makes TEMPUR material unique?",
+    "o": [
+      "It's the most budget-friendly foam on the market",
+      "It incorporates micro-coils within the foam layers",
+      "It's a proprietary natural latex compound blend",
+      "Viscoelastic foam originally developed by NASA"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Sealy Posturepedic targets support where?",
+    "o": [
+      "Head zone only — cradling the neck and skull area",
+      "Foot zone — reinforced support under the lower legs",
+      "Edges only — reinforced perimeter for sitting support",
+      "Center third — where your heaviest part rests"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Sealy's premium tier is called?",
+    "o": [
+      "Essentials Select",
+      "Response ProSeries",
+      "Comfort Collection",
+      "Posturepedic Plus"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Sealy Chill™ technology targets?",
+    "o": [
+      "Noise reduction between layers",
+      "Partner motion isolation control",
+      "Perimeter edge reinforcement only",
+      "Surface temperature regulation"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Serta Perfect Sleeper is powered by?",
+    "o": [
+      "Basic polyfoam core without added enhancements",
+      "Natural latex layers without any coil components",
+      "Internal water tubes for dynamic body contouring",
+      "Advanced gel foam plus zoned coil support"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Serta iComfort is known for?",
+    "o": [
+      "Budget-friendly pricing across all firmness levels",
+      "Traditional innerspring construction without any foam",
+      "Certified organic materials sourced from natural farms",
+      "Carbon fiber memory foam for cooling and support"
+    ],
+    "a": 3
+  },
+  {
+    "q": "How many standard Helix models exist?",
+    "o": [
+      "2",
+      "4",
+      "8",
+      "6"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Which Helix model is best for side sleepers?",
+    "o": [
+      "Dawn",
+      "Dusk",
+      "Twilight",
+      "Midnight"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Helix Midnight Luxe adds what over standard Midnight?",
+    "o": [
+      "A lower overall price and a slimmer profile",
+      "Extra coils only for a more responsive feel",
+      "A refreshed cover fabric with new stitching",
+      "Zoned lumbar support and a pillow top"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Purple Grid is made from?",
+    "o": [
+      "High-density polyfoam",
+      "Natural Talalay Latex",
+      "Organic cotton batting",
+      "Hyper-Elastic Polymer"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Purple Grid's key advantage over memory foam?",
+    "o": [
+      "It's cheaper to manufacture and sell at retail price",
+      "It's significantly firmer across all comfort levels",
+      "It outlasts memory foam by several years of daily use",
+      "No heat retention and instant pressure response"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Purple 4 vs. Purple 3 — what differs?",
+    "o": [
+      "Only the exterior fabric color and trim differ",
+      "Only the retail price point differs between them",
+      "A higher pocketed coil count in the support core",
+      "Grid layer is 4 inches vs. 3 inches thick"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Beautyrest Black signature technology?",
+    "o": [
+      "Budget pricing with economy-grade foam materials",
+      "Organic cotton construction with natural fibers",
+      "Complimentary memory foam pillow with purchase",
+      "T3 Pocketed Coil® plus BlackICE™ cooling"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Pocketed Coil® vs. traditional innerspring?",
+    "o": [
+      "Strictly a marketing label with no structural difference",
+      "Uses fewer coils overall to reduce production material costs",
+      "No real engineering difference between the two coil systems",
+      "Each coil individually wrapped for independent response"
+    ],
+    "a": 3
+  },
+  {
+    "q": "BlackICE™ technology does what?",
+    "o": [
+      "Provides targeted lumbar support in the lower back",
+      "Adds responsive bounce for easier position changes",
+      "Reduces motion transfer between sleeping partners",
+      "Multi-layer cooling system draws heat away"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Stearns & Foster's brand claim?",
+    "o": [
+      "Backed by celebrity endorsements and national media campaigns",
+      "Lowest price guaranteed with a full price-match commitment",
+      "Exclusively available through high-end luxury retail showrooms",
+      "Handcrafted with IntelliCoil® and premium certified materials"
+    ],
+    "a": 3
+  },
+  {
+    "q": "IntelliCoil® HD design?",
+    "o": [
+      "Air-filled chambers that adjust to body pressure on contact",
+      "Standard Bonnell coils wired together in a continuous grid",
+      "Purely a marketing brand name with no unique coil design",
+      "Coil-within-a-coil — soft entry, firms up progressively"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Why does hand-tufting matter in Stearns & Foster?",
+    "o": [
+      "It's a cheaper production method that lowers retail price",
+      "Just an aesthetic detail for a more premium visual appearance",
+      "Reduces overall mattress weight for easier room-to-room moves",
+      "Secures layers without adhesives for lasting durability"
+    ],
+    "a": 3
+  },
+  {
+    "q": "What is 'edge support' and why does it matter?",
+    "o": [
+      "Decorative stitching along the mattress border designed for a premium visual finish",
+      "A base-locking mechanism that prevents the mattress from shifting on the foundation",
+      "A weight-rated structural feature designed exclusively for plus-size sleepers",
+      "Reinforced perimeter so you can sit and sleep to the edge without roll-off"
+    ],
+    "a": 3
+  },
+  {
+    "q": "What is a hybrid mattress?",
+    "o": [
+      "Two separate mattresses stacked on top of each other as a sleep set",
+      "An electronically adjustable mattress that changes firmness on demand",
+      "A mattress with a removable comfort topper that can be swapped seasonally",
+      "Coil support system combined with foam or latex comfort layers"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Latex mattresses are best known for?",
+    "o": [
+      "Being the cheapest option across all mattress categories",
+      "Providing the heaviest feel of any mattress material",
+      "Having the shortest usable lifespan among all foam types",
+      "Natural durability, responsiveness, and cooling"
+    ],
+    "a": 3
+  },
+  {
+    "q": "What does 'off-gassing' mean with new foam mattresses?",
+    "o": [
+      "A manufacturing defect that requires an immediate product return",
+      "A permanent chemical smell that never fully dissipates from foam",
+      "Compressed air escaping from coil chambers during initial setup",
+      "Temporary harmless odor as foam expands and releases VOCs"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Which guest concern most directly points toward a cooling mattress?",
+    "o": [
+      "Says they wake up stiff with joint soreness",
+      "Reports chronic lower-back pain each morning",
+      "Mentions tossing and turning through the night",
+      "Says they sleep hot or wake up sweating"
+    ],
+    "a": 3
+  },
+  {
+    "q": "What is a 'pillow top' mattress?",
+    "o": [
+      "A mattress sold as a bundle that includes matching pillows",
+      "A firmness rating that matches the softness of a down pillow",
+      "A flat firm mattress with a tightly pulled quilted surface",
+      "An extra layer of padding sewn onto the top surface"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Somos Beds positioning in the market?",
+    "o": [
+      "Luxury-only positioning with premium pricing for high-end consumers",
+      "Budget-focused brand competing strictly on lowest-price-guaranteed deals",
+      "Online-exclusive direct-to-consumer brand with no retail showroom presence",
+      "Inclusive comfort for all body types with accessible price points"
+    ],
+    "a": 3
+  }
+]
