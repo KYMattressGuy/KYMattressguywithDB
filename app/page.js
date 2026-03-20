@@ -12,11 +12,16 @@ import Spinner from "./components/Spinner";
 function reducer(state, action) {
   switch (action.type) {
     case "session":
-      return { ...state, session: action.session };
+      return { ...state, session: action.session, profileLoaded: false };
     case "profile":
-      return { ...state, profile: action.profile, streak: action.streak };
+      return {
+        ...state,
+        profile: action.profile,
+        streak: action.streak,
+        profileLoaded: true,
+      };
     case "clear":
-      return { ...state, profile: null, streak: null };
+      return { ...state, profile: null, streak: null, profileLoaded: false };
     default:
       return state;
   }
@@ -27,11 +32,12 @@ export default function Page() {
     session: undefined,
     profile: null,
     streak: null,
+    profileLoaded: false,
   });
   const [screen, setScreen] = useState("home");
   const [activeCat, setActiveCat] = useState(null);
 
-  const { session, profile, streak } = state;
+  const { session, profile, streak, profileLoaded } = state;
 
   const load = useCallback(async (uid) => {
     const [{ data: p }, { data: s }] = await Promise.all([
@@ -62,20 +68,41 @@ export default function Page() {
     }
     let cancelled = false;
     (async () => {
-      const [{ data: p }, { data: s }] = await Promise.all([
-        supabase
-          .from("profiles")
-          .select("*")
-          .eq("id", session.user.id)
-          .single(),
-        supabase
-          .from("streaks")
-          .select("*")
-          .eq("user_id", session.user.id)
-          .single(),
-      ]);
+      const [{ data: p, error: pErr }, { data: s, error: sErr }] =
+        await Promise.all([
+          supabase
+            .from("profiles")
+            .select("*")
+            .eq("id", session.user.id)
+            .single(),
+          supabase
+            .from("streaks")
+            .select("*")
+            .eq("user_id", session.user.id)
+            .single(),
+        ]);
       if (!cancelled) {
-        dispatch({ type: "profile", profile: p, streak: s });
+        if (pErr) {
+          console.warn("Profile fetch error:", pErr.message);
+        }
+        if (sErr) {
+          console.warn("Streak fetch error:", sErr.message);
+        }
+        dispatch({
+          type: "profile",
+          profile: p || {
+            id: session.user.id,
+            full_name: session.user.email?.split("@")[0] || "User",
+            store_location: "",
+            role: "rep",
+          },
+          streak: s || {
+            user_id: session.user.id,
+            current_streak: 0,
+            longest_streak: 0,
+            total_xp: 0,
+          },
+        });
       }
     })();
     return () => {
@@ -85,7 +112,7 @@ export default function Page() {
 
   if (session === undefined) return <Spinner />;
   if (!session) return <Auth />;
-  if (!profile) return <Spinner />;
+  if (!profileLoaded) return <Spinner />;
 
   if (screen === "quiz" && activeCat)
     return (
