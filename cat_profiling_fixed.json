@@ -1,0 +1,402 @@
+[
+  {
+    "q": "Millennial couple — best approach?",
+    "o": [
+      "Standard scripted pitch with emphasis on warranty length and brand heritage",
+      "Lead with lowest price point, discount offers, and clearance models only",
+      "Focus exclusively on health certifications, foam density specs, and lab results",
+      "Lifestyle benefits, transparency, and real reviews + technology story"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Retired couple — focus on?",
+    "o": [
+      "Lowest price tag available, clearance models, and basic options",
+      "Trendiest new model with social media buzz and modern aesthetics",
+      "Fastest delivery timeline, same-day pickup, and quick decisions",
+      "Health benefits, ease of use, base demo, and long-term value"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Buying for a college student?",
+    "o": [
+      "Premium luxury model with advanced features and adjustable base included",
+      "Most expensive option with full accessory bundle and white-glove setup",
+      "Basic mattress only with no protector — students don't need extras",
+      "Durable, affordable, easy setup — and always include a protector"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest mentions chronic back pain — first question?",
+    "o": [
+      "'What's your total budget range so I can narrow down the right price tier for you?'",
+      "'Which brand names have you been looking at or heard the most about online?'",
+      "'How soon do you need delivery — are you on a tight timeline for this purchase?'",
+      "'Where specifically — lower, upper, or both? What position do you sleep in?'"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Hot sleeper profiling — what to emphasize?",
+    "o": [
+      "Plush feel layers, soft quilted tops, and thick comfort padding for coziness",
+      "Total coil count, gauge thickness, and innerspring construction specifications",
+      "Pillow height options, fill material choices, and pillow firmness preferences",
+      "Cooling technology, breathable covers, and airflow-optimized construction"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Couple with different firmness preferences?",
+    "o": [
+      "Default to the softer option since it pleases more sleepers",
+      "Go with the firmer mattress and add a topper to adjust feel",
+      "Tell them to compromise and settle on a universal medium feel",
+      "Split king adjustable base — each side fully customizable"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest who researched everything online — approach?",
+    "o": [
+      "Disregard their research findings and redirect them toward your preferred models",
+      "Challenge their knowledge head-on by citing technical specs and brand comparisons",
+      "Simplify everything down to basic options and skip the technical conversation entirely",
+      "Validate their research, then add what the internet can't: in-person feel and expert fit"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest buying for Airbnb property?",
+    "o": [
+      "Luxury premium mattress only — high guest ratings require top-tier products",
+      "Cheapest available option to minimize cost since guests won't notice the difference",
+      "Standard mattress without a protector — frequent sheet changes are enough protection",
+      "Durable mid-range with heavy-duty waterproof protector — durability is priority"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest with fibromyalgia — what matters most?",
+    "o": [
+      "Firmness level only — extra-firm support is the primary concern for chronic pain",
+      "Brand name reputation and recognition — trusted names provide the most confidence",
+      "Lowest price point only — condition management shouldn't require premium spending",
+      "Pressure relief and temperature regulation — pain sensitivity requires extra care"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Night shift worker — what do they need?",
+    "o": [
+      "Standard mattress with typical features — sleep schedule doesn't change needs",
+      "Cheapest option available since they spend fewer consecutive hours sleeping anyway",
+      "Luxury top-tier mattress only — nothing else will work for irregular schedules",
+      "Blackout-compatible setup, temperature regulation, maximum comfort for daytime sleep"
+    ],
+    "a": 3
+  },
+  {
+    "q": "First-time mattress buyer — what do they need most?",
+    "o": [
+      "Show the most expensive option first — premium products make the best first purchase",
+      "Dive into the most technical explanation of coil systems, foam layers, and materials",
+      "Let them browse independently — first-time buyers prefer no guidance or pressure",
+      "Education first — walk them through types, firmness, and sleep position basics"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest trading up from a $400 mattress — approach?",
+    "o": [
+      "Show only budget-tier options similar to what they already own and are used to",
+      "Immediately jump to the most expensive model to maximize the upgrade experience",
+      "Ignore their mattress history entirely and treat them as a brand-new buyer",
+      "Acknowledge their upgrade mindset, show the quality jump from entry to mid-range"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Pregnant guest — key considerations?",
+    "o": [
+      "No special needs beyond standard — pregnancy doesn't change mattress requirements",
+      "Only mattress size matters — upgrade to a larger bed for more room during pregnancy",
+      "Standard recommendation works fine — use same approach as any other guest profile",
+      "Side sleeping support, pressure relief on hips and shoulders, adjustable base for comfort"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest with sleep apnea — what to recommend?",
+    "o": [
+      "Don't address the condition — mattress consultants shouldn't discuss medical topics",
+      "Softest mattress possible with maximum plush layers for ultimate sink-in comfort",
+      "No specific recommendation is possible — sleep apnea is a medical issue only doctors handle",
+      "Adjustable base for head elevation + supportive mattress — can reduce apnea episodes"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest buying for an elderly parent?",
+    "o": [
+      "Cheapest available option — focus on affordability since it may not be used long-term",
+      "No special considerations needed — elderly guests have the same needs as everyone else",
+      "Go with the firmest option available — older adults always need maximum firm support",
+      "Easy entry/exit height, supportive but pressure-relieving, adjustable base a strong option"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Heavy guest (300+ lbs) — what matters most?",
+    "o": [
+      "Thread count of the mattress cover, quilt pattern, and surface fabric softness",
+      "Softest plush feel available with maximum comfort layers and pillow-top cushioning",
+      "Total pillow count in the bundle, decorative shams, and accessory package options",
+      "High-density foam, reinforced coils, strong edge support, and firm to medium-firm feel"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Light guest (under 130 lbs) — what to avoid?",
+    "o": [
+      "Avoid soft mattresses — lighter guests sink too deep and lose proper alignment",
+      "Avoid any hybrid model — the coil system is unnecessary for lighter body types",
+      "Avoid all-foam mattresses — lighter sleepers need coils for adequate responsiveness",
+      "Very firm mattresses — lighter guests don't compress enough to activate support"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest with restless leg syndrome — what helps?",
+    "o": [
+      "Hardest mattress possible with minimal cushion — firm surface calms restless legs",
+      "Nothing specifically helps from a mattress standpoint — it's a medical-only issue",
+      "Softest mattress only with deep plush layers to fully cushion involuntary movement",
+      "Motion-isolating mattress + adjustable base massage to relax legs before sleep"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest buying a mattress for their child (age 10) — key factors?",
+    "o": [
+      "Luxury brands only — children's developing bodies need the highest-end materials",
+      "Adult specifications apply — same firmness, size, and features work for children too",
+      "No protector needed — kids over age five are past the stage of mattress accidents",
+      "Supportive, durable, waterproof protector essential, age-appropriate size"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest who is a professional athlete — what to emphasize?",
+    "o": [
+      "Budget-friendly options — athletes already invest heavily in other recovery equipment",
+      "Standard comfort features with no special emphasis on athletic performance or recovery-specific needs",
+      "Brand name recognition only — athletes want the most well-known mattress labels available",
+      "Recovery-focused — pressure relief, temperature regulation, and adjustable base for recovery positioning"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest mentions shoulder pain — what's the best starting point?",
+    "o": [
+      "Firm mattress with minimal cushion — solid support resolves most shoulder discomfort issues",
+      "Innerspring only with traditional coil support — best for targeted shoulder pain relief",
+      "No special consideration needed — shoulder pain isn't typically related to mattress choice",
+      "Side sleeper with shoulder pain = softer feel with good shoulder cradle, often memory foam or hybrid"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Couple where one is a side sleeper and one is a back sleeper?",
+    "o": [
+      "Pick based on back sleeper's needs since firm support benefits everyone",
+      "Pick based on side sleeper's needs since soft feel works broadly",
+      "Tell them to sleep separately — different positions can't share",
+      "Medium feel hybrid — compromise that works for both positions"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest who travels frequently for work — what do they value?",
+    "o": [
+      "Lowest price available — frequent travelers spend less time at home in bed so comfort matters less",
+      "Same approach as everyone — travel frequency doesn't affect mattress preferences at all",
+      "No special needs to address — their travel schedule has no bearing on sleep quality",
+      "Consistent deep sleep quality — high comfort, motion isolation, and possibly base for jet lag recovery"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest mentions they have allergies — key recommendation?",
+    "o": [
+      "Any mattress works fine — allergies are managed with medication, not bedding choices",
+      "Price-based selection only — allergy features aren't worth the additional cost investment",
+      "Ignore the mention entirely — allergies aren't relevant to the mattress buying process",
+      "Hypoallergenic protector, pillow with certified clean fill, and mattress with allergen-resistant cover"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest is a stomach sleeper with lower back pain — what to recommend?",
+    "o": [
+      "Very soft mattress with deep cushion layers — lets the body sink in and relax fully",
+      "Extra firm is always best — maximum support corrects all issues",
+      "No recommendation possible — stomach sleeping pain needs medical care",
+      "Medium-firm to firm — stomach sleepers need hips prevented from sinking"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest buying a mattress to improve their work performance?",
+    "o": [
+      "Ignore this angle completely — work performance isn't a valid mattress selling point",
+      "Only relevant for professional athletes — office workers won't see measurable sleep benefits",
+      "No real connection to mattresses — sleep quality and work output aren't directly linked",
+      "Sleep directly impacts focus, mood, and performance — make the health ROI connection"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest says 'I sleep fine.' How do you create awareness?",
+    "o": [
+      "Take them at their word and move directly to showing available inventory options",
+      "Skip the discovery conversation entirely and let them browse at their own pace",
+      "Assume they genuinely don't need anything and wrap up the interaction quickly",
+      "Ask: 'How do you feel when you first wake up? Any stiffness? Do you wake up during the night?'"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest with a toddler at home — what do they value?",
+    "o": [
+      "Trendy aesthetics, modern design elements, and showroom-matching bedroom style",
+      "Brand names only — parents with young children want recognized and trusted labels",
+      "Price only — toddler families are always budget-constrained and need cheapest options",
+      "Quick delivery, easy setup, durable materials, and a protector for inevitable spills"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest buying their first king-size bed — what to address?",
+    "o": [
+      "Nothing special to consider — king is simply a larger version of the same mattress",
+      "Only the size difference matters — everything else stays identical to smaller beds",
+      "Same approach as a twin buyer — just scale up the recommendation proportionally",
+      "Foundation/frame compatibility, room dimensions, split king base option, and budget planning"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest mentions poor sleep affecting their relationship — how do you respond?",
+    "o": [
+      "Ignore personal details and redirect the conversation back to mattress specifications only",
+      "Sell them two separate twin mattresses for different rooms to solve the problem quickly",
+      "Move on quickly from the personal topic — relationship issues aren't part of the sale",
+      "Empathize and connect — better sleep transforms daily life together. Show split king option."
+    ],
+    "a": 3
+  },
+  {
+    "q": "What does profiling a guest early accomplish?",
+    "o": [
+      "Wastes valuable selling time that could be spent showing products on the floor instead",
+      "Only helps with narrowing down the brand choice — doesn't impact overall sales approach",
+      "Only useful for price negotiation tactics — doesn't affect product recommendation quality",
+      "Allows you to match the right product, save time, and build trust through personalization"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest is clearly on a tight budget but has back pain. What do you do?",
+    "o": [
+      "Ignore their pain concerns entirely and focus on selling the cheapest available model",
+      "Push luxury high-end options aggressively and hope they'll open a financing account",
+      "Skip soft goods and accessories entirely — protectors and pillows aren't worth pitching",
+      "Start at good-better-best in their range, mention financing, always include a protector"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest mentions they've had 3 mattresses in 5 years. What does that tell you?",
+    "o": [
+      "They're simply indecisive shoppers who will likely return whatever you recommend too",
+      "They're wealthy enough to replace mattresses frequently and want premium luxury options",
+      "They return everything regardless — expect this sale to come back as a return as well",
+      "They haven't found the right fit — discovery is critical. Ask what went wrong each time."
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest buying mattress as a gift — what do you need to know?",
+    "o": [
+      "Nothing extra beyond the standard information — gift purchases follow the same process",
+      "Just the price range they want to spend — that's all that matters for a gift purchase",
+      "Only the bed size needed — everything else can be figured out after delivery happens",
+      "Recipient's sleep position, health needs, size preference, and whether they'll want to exchange"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest has a new puppy and is worried about damage — what do you recommend?",
+    "o": [
+      "No special recommendation needed — standard mattress care handles pet ownership fine",
+      "Skip the protector pitch entirely — a good mattress cover is sufficient for pet damage",
+      "Suggest a different brand known for durability — the mattress itself should resist damage",
+      "Waterproof encasement protector — full six-side protection for worst-case scenarios"
+    ],
+    "a": 3
+  },
+  {
+    "q": "What is the 'sleep story' approach to profiling?",
+    "o": [
+      "Telling guests about your own personal sleep journey to build rapport and connection",
+      "A marketing campaign run by corporate to drive seasonal traffic into retail locations",
+      "A brand origin story shared with guests to build trust through company heritage history",
+      "Asking guests to describe their ideal sleep experience — builds emotional investment"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest says their doctor told them to get a new mattress. How do you use this?",
+    "o": [
+      "Tell them the doctor's advice is too general and redirect them toward your own assessment",
+      "Ignore it entirely — doctors don't understand mattress technology or current product options",
+      "Just show the most expensive premium model since a doctor's referral justifies top pricing",
+      "Validate the doctor's advice and use it as a strong buying motivator — it's already a decided need"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest shopping for a vacation rental property (multiple units)?",
+    "o": [
+      "Standard single-unit approach for each room — no special volume strategy is needed here",
+      "No special consideration required — treat multi-unit purchases exactly like a single sale",
+      "Skip soft goods and protectors entirely — vacation rentals don't need accessory packages",
+      "Volume opportunity — durable mid-range + protectors on every unit, ask about future purchases"
+    ],
+    "a": 3
+  },
+  {
+    "q": "Guest mentions waking up 3–4 times per night. What does this suggest?",
+    "o": [
+      "Completely normal sleep pattern — nothing specific to address from a mattress perspective",
+      "They're sleeping too much overall and should reduce total hours to consolidate sleep cycles",
+      "They need a bigger bed for more room — upgrading the size alone will resolve the wake-ups",
+      "Could indicate discomfort, temperature issues, or support problems — all solvable with the right mattress"
+    ],
+    "a": 3
+  },
+  {
+    "q": "What does 'lifestyle selling' mean in mattress retail?",
+    "o": [
+      "Selling based on income level — matching the mattress tier to the guest's financial bracket",
+      "Selling based on brand preference — letting the guest's favorite label drive the recommendation",
+      "Selling based on room decor and aesthetics — matching the mattress look to bedroom style",
+      "Connecting the mattress to the guest's real life — their health, energy, relationships, and performance"
+    ],
+    "a": 3
+  }
+]
