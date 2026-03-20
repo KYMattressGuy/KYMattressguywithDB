@@ -3,23 +3,39 @@
 ## Cursor Cloud specific instructions
 
 ### Overview
-This is **KY Mattress Guy Pro**, a single-page Create React App (CRA) quiz/training platform for mattress retail sales. It uses a **remote hosted Supabase** instance for auth and data persistence (hardcoded URL + anon key in `src/App.js`). There is no local backend.
+**KY Mattress Guy Pro** is a Next.js 16 Progressive Web App — a quiz/training platform for mattress retail sales. It uses a remote hosted Supabase instance for auth and data persistence (config in `lib/supabase.js`). There is no local backend.
 
 ### Node version
-Use **Node.js 20** (via `nvm use 20`). CRA 5's webpack toolchain breaks on Node 22+ due to `ajv` module resolution issues.
+Use **Node.js 20** via `nvm use 20`. Next.js 16 + Supabase SDK require Node >= 20.
 
 ### Dependency install
-`npm install --legacy-peer-deps` is required because `react-scripts@5` declares `typescript@^3 || ^4` as a peer dependency, but the project uses `typescript@5.7`. After the main install, run `npm install ajv@8 --no-save --legacy-peer-deps` to fix a missing `ajv/dist/compile/codegen` error caused by `ajv-keywords@5` needing `ajv@8` while CRA hoists `ajv@6`.
+Run `npm install` from the workspace root. No special flags needed (the `package-lock.json` handles resolution).
 
 ### Key commands
 | Task | Command |
 |------|---------|
-| Dev server | `npm start` (port 3000) |
+| Dev server | `npm run dev` (port 3000) |
 | Build | `npm run build` |
-| Lint | `npx eslint src/` |
-| Test | `CI=true npx react-scripts test --env=jsdom --watchAll=false --passWithNoTests` |
+| Lint | `npx eslint app/ lib/` |
+| Test | No test files exist yet |
+
+### Project structure
+```
+app/              → Next.js App Router pages and components
+  components/     → Auth, Home, Quiz, Board, Manager, Spinner
+  layout.js       → Root layout (metadata, viewport, PWA)
+  page.js         → Main client page (session management, routing)
+  globals.css     → Tailwind CSS imports and custom theme
+lib/              → Shared modules
+  questions.js    → 332-question bank data
+  constants.js    → Categories (CATS), ranks (RANKS)
+  utils.js        → getRank(), shuffle()
+  supabase.js     → Supabase client init
+public/           → Static assets, PWA manifest, icons
+```
 
 ### Notes
-- The entire app lives in `src/App.js` (~4400 lines). There are no test files in the repository.
-- Auth and database depend on the remote Supabase project at `iefgjjgoswtymucyqlzn.supabase.co`. Sign-up/sign-in requires valid credentials on that Supabase instance.
-- No lockfile exists; `npm install` resolves fresh each time.
+- Auth and database depend on the remote Supabase project. Sign-up/sign-in requires valid credentials on that instance.
+- PWA support via `next-pwa` — service worker is disabled in development mode and only generated during production builds.
+- Tailwind uses custom theme colors: `navy` (#1B2B4B), `gold` (#C9A84C), `light` (#F7F8FA) defined in `app/globals.css`.
+- ESLint uses `eslint-config-next` flat config in `eslint.config.mjs`.
