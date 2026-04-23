@@ -1,7 +1,7 @@
 {
-  "name": "KY Mattress Guy Pro",
-  "short_name": "KY Mattress Pro",
-  "description": "Sales Training Platform for mattress retail professionals",
+  "name": "RetailSleep Academy",
+  "short_name": "RetailSleep",
+  "description": "Sleep retail training platform — quizzes, leaderboards, and team insights",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#1B2B4B",

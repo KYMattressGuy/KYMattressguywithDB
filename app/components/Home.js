@@ -21,9 +21,9 @@ export default function Home({ profile, streak, onQuiz, onBoard, onManager, onSi
         <div className="flex justify-between items-center mb-4">
           <div className="flex items-center gap-2">
             <div className="w-8 h-8 rounded-xl bg-white/10 flex items-center justify-center text-lg">
-              🛏️
+              🎓
             </div>
-            <span className="text-white/80 font-semibold text-sm">KY Pro</span>
+            <span className="text-white/80 font-semibold text-sm">RetailSleep</span>
           </div>
           <button
             onClick={onSignOut}

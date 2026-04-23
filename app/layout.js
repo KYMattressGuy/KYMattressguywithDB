@@ -1,13 +1,13 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "KY Mattress Guy Pro",
-  description: "Sales Training Platform for mattress retail professionals",
+  title: "RetailSleep Academy",
+  description: "Sleep retail training platform — quizzes, leaderboards, and team insights",
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "KY Mattress Pro",
+    title: "RetailSleep Academy",
   },
 };
 

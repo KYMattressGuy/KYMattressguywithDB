@@ -3,7 +3,7 @@
 ## Cursor Cloud specific instructions
 
 ### Overview
-**KY Mattress Guy Pro** is a Next.js 16 Progressive Web App — a quiz/training platform for mattress retail sales. It uses a remote hosted Supabase instance for auth and data persistence (config in `lib/supabase.js`). There is no local backend.
+**RetailSleep Academy** is a Next.js 16 Progressive Web App — a quiz/training platform for mattress retail sales. It uses a remote hosted Supabase instance for auth and data persistence (config in `lib/supabase.js`). There is no local backend.
 
 ### Node version
 Use **Node.js 20** via `nvm use 20`. Next.js 16 + Supabase SDK require Node >= 20.
