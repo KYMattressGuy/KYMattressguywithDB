@@ -5,8 +5,12 @@ import { Q } from "@/lib/questions";
 import { supabase } from "@/lib/supabase";
 import { shuffle } from "@/lib/utils";
 
+import { STORES } from "@/lib/constants";
+
 export default function Quiz({ cat, userId, userStore, onDone }) {
-  const pool = (Q[cat.id] || []).filter((q) => !q.s || q.s.includes(userStore));
+  const storeConfig = STORES.find((s) => s.id === userStore) || STORES[0];
+  const storeIncludes = storeConfig.includes || [userStore];
+  const pool = (Q[cat.id] || []).filter((q) => !q.s || q.s.some((tag) => storeIncludes.includes(tag)));
   const [{ questions, shuffledOpts }] = useState(() => {
     const qs = shuffle(pool).slice(0, Math.min(10, pool.length));
     return { questions: qs, shuffledOpts: qs.map((q) => shuffle(q.o)) };

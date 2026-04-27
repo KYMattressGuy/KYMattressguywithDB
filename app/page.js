@@ -36,8 +36,11 @@ export default function Page() {
   });
   const [screen, setScreen] = useState("home");
   const [activeCat, setActiveCat] = useState(null);
+  const [activeStore, setActiveStore] = useState(null);
 
   const { session, profile, streak, profileLoaded } = state;
+
+  const currentStore = activeStore || profile?.store_location || "MW";
 
   const load = useCallback(async (uid) => {
     const [{ data: p }, { data: s }] = await Promise.all([
@@ -82,12 +85,8 @@ export default function Page() {
             .single(),
         ]);
       if (!cancelled) {
-        if (pErr) {
-          console.warn("Profile fetch error:", pErr.message);
-        }
-        if (sErr) {
-          console.warn("Streak fetch error:", sErr.message);
-        }
+        if (pErr) console.warn("Profile fetch error:", pErr.message);
+        if (sErr) console.warn("Streak fetch error:", sErr.message);
         dispatch({
           type: "profile",
           profile: p || {
@@ -119,7 +118,7 @@ export default function Page() {
       <Quiz
         cat={activeCat}
         userId={session.user.id}
-        userStore={profile?.store_location || "MW"}
+        userStore={currentStore}
         onDone={() => {
           setScreen("home");
           load(session.user.id);
@@ -134,6 +133,8 @@ export default function Page() {
     <Home
       profile={profile}
       streak={streak}
+      activeStore={currentStore}
+      onStoreChange={setActiveStore}
       onQuiz={(cat) => {
         setActiveCat(cat);
         setScreen("quiz");
