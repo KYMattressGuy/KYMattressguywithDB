@@ -1,7 +1,7 @@
 "use client";
 
 import { Q } from "@/lib/questions";
-import { CATS } from "@/lib/constants";
+import { CATS, STORES } from "@/lib/constants";
 import { getRank } from "@/lib/utils";
 import { RANKS } from "@/lib/constants";
 
@@ -9,125 +9,92 @@ export default function Home({ profile, streak, onQuiz, onBoard, onManager, onSi
   const xp = streak?.total_xp || 0;
   const rank = getRank(xp);
   const next = RANKS.find((r) => r.min > xp);
-  const prog = next
-    ? Math.round(((xp - rank.min) / (next.min - rank.min)) * 100)
-    : 100;
-  const totalQ = Object.values(Q).reduce((a, c) => a + c.length, 0);
+  const prog = next ? Math.round(((xp - rank.min) / (next.min - rank.min)) * 100) : 100;
+
+  const userStore = profile?.store_location || "MW";
+  const storeName = STORES.find((s) => s.id === userStore)?.label || userStore;
+
+  const getCount = (catId) => {
+    const qs = Q[catId] || [];
+    return qs.filter((q) => !q.s || q.s.includes(userStore)).length;
+  };
+  const totalQ = Object.keys(Q).reduce((a, k) => a + getCount(k), 0);
 
   return (
     <div className="min-h-screen bg-surface">
-      {/* Gradient Header */}
-      <div className="gradient-header px-5 pt-6 pb-8 rounded-b-[2rem]">
-        <div className="flex justify-between items-center mb-4">
-          <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-xl bg-white/10 flex items-center justify-center text-lg">
-              🎓
+      {/* Header */}
+      <div className="bg-surface-dark px-5 pt-5 pb-7">
+        <div className="flex justify-between items-center mb-5">
+          <div className="flex items-center gap-2.5">
+            <div className="w-9 h-9 rounded-xl bg-primary/20 flex items-center justify-center text-lg">🎓</div>
+            <div>
+              <div className="text-white font-semibold text-sm">RetailSleep</div>
+              <div className="text-muted text-[11px]">{storeName}</div>
             </div>
-            <span className="text-white/80 font-semibold text-sm">RetailSleep</span>
           </div>
-          <button
-            onClick={onSignOut}
-            className="bg-white/10 border-none text-white/60 px-4 py-2 rounded-full cursor-pointer text-xs font-medium hover:bg-white/20 hover:text-white transition-all"
-          >
+          <button onClick={onSignOut} className="text-muted text-xs hover:text-white transition px-3 py-1.5 rounded-lg hover:bg-white/5 border-none bg-transparent cursor-pointer">
             Sign Out
           </button>
         </div>
 
-        <div className="text-white text-2xl font-bold mb-1">
+        <div className="text-white text-xl font-bold mb-1">
           Hey, {profile?.full_name?.split(" ")[0]}! 👋
-        </div>
-        <div className="text-white/40 text-sm mb-5">
-          {profile?.store_location}
         </div>
 
         {/* XP Card */}
-        <div className="glass rounded-2xl p-5">
-          <div className="flex justify-between items-center mb-3">
-            <div className="flex items-center gap-2">
-              <span className="text-2xl">{rank.icon}</span>
+        <div className="mt-4 bg-surface-mid rounded-2xl p-4 border border-white/5">
+          <div className="flex justify-between items-center mb-2.5">
+            <div className="flex items-center gap-2.5">
+              <span className="text-xl">{rank.icon}</span>
               <div>
-                <div className="text-accent font-bold text-sm">{rank.label}</div>
-                <div className="text-white/40 text-xs">
-                  {xp} XP{next && ` · ${next.min - xp} to next`}
-                </div>
+                <div className="text-white font-semibold text-sm">{rank.label}</div>
+                <div className="text-muted text-xs">{xp} XP{next && ` · ${next.min - xp} to next`}</div>
               </div>
             </div>
             <div className="text-right">
-              <div className="text-white font-bold text-lg">{prog}%</div>
+              <div className="text-accent font-bold text-lg">{prog}%</div>
             </div>
           </div>
-          <div className="bg-white/10 rounded-full h-2.5 overflow-hidden">
-            <div
-              className="bg-gradient-to-r from-accent to-accent-light h-2.5 rounded-full transition-all duration-700 ease-out"
-              style={{ width: `${prog}%` }}
-            />
+          <div className="bg-white/5 rounded-full h-2 overflow-hidden">
+            <div className="bg-gradient-to-r from-primary to-primary-light h-2 rounded-full transition-all duration-700" style={{ width: `${prog}%` }} />
           </div>
-          <div className="flex justify-between mt-3">
-            <span className="text-white/40 text-xs flex items-center gap-1">
-              🔥 {streak?.current_streak || 0} day streak
-            </span>
-            <span className="text-white/40 text-xs flex items-center gap-1">
-              📚 {totalQ} questions
-            </span>
+          <div className="flex justify-between mt-2.5 text-muted text-xs">
+            <span>🔥 {streak?.current_streak || 0} day streak</span>
+            <span>📚 {totalQ} questions for your store</span>
           </div>
         </div>
       </div>
 
       {/* Content */}
-      <div className="px-5 -mt-4 pb-10">
-        {/* Action buttons */}
-        <div className="flex gap-3 mb-6">
-          <button
-            onClick={onBoard}
-            className="flex-1 py-3.5 bg-white border-none rounded-2xl text-primary font-bold text-sm cursor-pointer shadow-md shadow-black/5 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2"
-          >
-            <span>🏆</span> Leaderboard
+      <div className="px-5 pt-5 pb-10">
+        <div className="flex gap-2.5 mb-5">
+          <button onClick={onBoard} className="flex-1 py-3 bg-white border-none rounded-xl text-surface-dark font-semibold text-sm cursor-pointer shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all flex items-center justify-center gap-1.5">
+            🏆 Leaderboard
           </button>
           {profile?.role === "manager" && (
-            <button
-              onClick={onManager}
-              className="flex-1 py-3.5 bg-primary border-none rounded-2xl text-white font-bold text-sm cursor-pointer shadow-md shadow-primary/20 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 flex items-center justify-center gap-2"
-            >
-              <span>📊</span> Dashboard
+            <button onClick={onManager} className="flex-1 py-3 bg-primary border-none rounded-xl text-white font-semibold text-sm cursor-pointer shadow-sm shadow-primary/20 hover:shadow-md hover:-translate-y-0.5 transition-all flex items-center justify-center gap-1.5">
+              📊 Dashboard
             </button>
           )}
         </div>
 
-        <div className="font-bold text-surface-dark text-base mb-4">
-          Training Categories
-        </div>
+        <div className="text-surface-dark font-semibold text-[15px] mb-3">Categories</div>
 
-        {/* Bento Grid */}
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-2 gap-2.5">
           {CATS.map((cat, i) => {
-            const count = (Q[cat.id] || []).length;
+            const count = getCount(cat.id);
             return (
               <button
                 key={cat.id}
                 onClick={() => onQuiz(cat)}
-                className="relative p-5 bg-white border-none rounded-2xl cursor-pointer text-left shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group overflow-hidden animate-slide-up"
-                style={{ animationDelay: `${i * 50}ms` }}
+                className="p-4 bg-white border-none rounded-2xl cursor-pointer text-left shadow-sm hover:shadow-md hover:-translate-y-0.5 transition-all group animate-slide-up"
+                style={{ animationDelay: `${i * 40}ms` }}
               >
-                <div
-                  className="absolute top-0 right-0 w-20 h-20 rounded-full opacity-[0.07] -translate-y-1/2 translate-x-1/2"
-                  style={{ backgroundColor: cat.color }}
-                />
-                <div
-                  className="w-11 h-11 rounded-xl flex items-center justify-center text-2xl mb-3"
-                  style={{ backgroundColor: `${cat.color}15` }}
-                >
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center text-xl mb-2.5" style={{ backgroundColor: `${cat.color}12` }}>
                   {cat.icon}
                 </div>
-                <div className="text-surface-dark font-bold text-[13px] leading-tight mb-1">
-                  {cat.label}
-                </div>
-                <div className="text-muted text-xs">
-                  {count} questions
-                </div>
-                <div
-                  className="absolute bottom-0 left-0 w-full h-0.5 opacity-0 group-hover:opacity-100 transition-opacity"
-                  style={{ backgroundColor: cat.color }}
-                />
+                <div className="text-surface-dark font-semibold text-[13px] leading-snug">{cat.label}</div>
+                <div className="text-muted text-xs mt-1">{count} questions</div>
               </button>
             );
           })}

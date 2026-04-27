@@ -119,6 +119,7 @@ export default function Page() {
       <Quiz
         cat={activeCat}
         userId={session.user.id}
+        userStore={profile?.store_location || "MW"}
         onDone={() => {
           setScreen("home");
           load(session.user.id);
