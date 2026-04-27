@@ -119,6 +119,7 @@ export default function Page() {
         cat={activeCat}
         userId={session.user.id}
         userStore={currentStore}
+        userXp={streak?.total_xp || 0}
         onDone={() => {
           setScreen("home");
           load(session.user.id);

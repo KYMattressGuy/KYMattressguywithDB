@@ -13,10 +13,13 @@ export default function Home({ profile, streak, activeStore, onStoreChange, onQu
   const currentStore = STORES.find((s) => s.id === activeStore) || STORES[0];
   const competitor = STORES.find((s) => s.id === currentStore.competitor);
   const storeIncludes = currentStore.includes || [activeStore];
+  const maxDiff = rank.maxDifficulty || 5;
 
   const getCount = (catId) => {
     const qs = Q[catId] || [];
-    return qs.filter((q) => !q.s || q.s.some((tag) => storeIncludes.includes(tag))).length;
+    return qs.filter(
+      (q) => (!q.s || q.s.some((tag) => storeIncludes.includes(tag))) && (!q.d || q.d <= maxDiff)
+    ).length;
   };
   const totalQ = Object.keys(Q).reduce((a, k) => a + getCount(k), 0);
 
@@ -80,7 +83,8 @@ export default function Home({ profile, streak, activeStore, onStoreChange, onQu
           </div>
           <div className="flex justify-between mt-2.5 text-muted text-xs">
             <span>🔥 {streak?.current_streak || 0} day streak</span>
-            <span>📚 {totalQ} questions</span>
+            <span>📊 Difficulty 1–{maxDiff}</span>
+            <span>📚 {totalQ} Qs</span>
           </div>
         </div>
       </div>

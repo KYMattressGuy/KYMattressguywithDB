@@ -6,11 +6,16 @@ import { supabase } from "@/lib/supabase";
 import { shuffle } from "@/lib/utils";
 
 import { STORES } from "@/lib/constants";
+import { getRank } from "@/lib/utils";
 
-export default function Quiz({ cat, userId, userStore, onDone }) {
+export default function Quiz({ cat, userId, userStore, userXp, onDone }) {
   const storeConfig = STORES.find((s) => s.id === userStore) || STORES[0];
   const storeIncludes = storeConfig.includes || [userStore];
-  const pool = (Q[cat.id] || []).filter((q) => !q.s || q.s.some((tag) => storeIncludes.includes(tag)));
+  const rank = getRank(userXp || 0);
+  const maxDiff = rank.maxDifficulty || 5;
+  const pool = (Q[cat.id] || []).filter(
+    (q) => (!q.s || q.s.some((tag) => storeIncludes.includes(tag))) && (!q.d || q.d <= maxDiff)
+  );
   const [{ questions, shuffledOpts }] = useState(() => {
     const qs = shuffle(pool).slice(0, Math.min(10, pool.length));
     return { questions: qs, shuffledOpts: qs.map((q) => shuffle(q.o)) };
