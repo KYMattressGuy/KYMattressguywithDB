@@ -7,7 +7,7 @@ export const metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "black-translucent",
-    title: "RetailSleep Academy",
+    title: "RetailSleep",
   },
 };
 
@@ -15,7 +15,9 @@ export const viewport = {
   width: "device-width",
   initialScale: 1,
   maximumScale: 1,
-  themeColor: "#1B2B4B",
+  userScalable: false,
+  viewportFit: "cover",
+  themeColor: "#0F172A",
 };
 
 export default function RootLayout({ children }) {
@@ -23,8 +25,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="apple-touch-icon" href="/icons/icon-192.png" />
+        <meta name="mobile-web-app-capable" content="yes" />
       </head>
-      <body className="bg-light antialiased">{children}</body>
+      <body className="bg-surface antialiased overscroll-none select-none">
+        {children}
+      </body>
     </html>
   );
 }

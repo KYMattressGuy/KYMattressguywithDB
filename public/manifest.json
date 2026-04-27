@@ -4,9 +4,10 @@
   "description": "Sleep retail training platform — quizzes, leaderboards, and team insights",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#1B2B4B",
-  "theme_color": "#1B2B4B",
+  "background_color": "#0F172A",
+  "theme_color": "#0F172A",
   "orientation": "portrait-primary",
+  "categories": ["education", "business"],
   "icons": [
     {
       "src": "/icons/icon-192.png",
